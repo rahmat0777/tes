@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator </title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="col-1" style="border:solid ;">
+            <b style="font-size:30px ;"> kalkulator pintar </b>
+            
+            <form name="form">
+                <input class="hasil" name="hasil">
+            </form>
+            <div class="awal">
+                <button class="lom-1" onclick="insert('+')"><b> + </b></button>
+                <button class="lom-2" onclick="insert('-')"><b> - </b></button>
+                <button class="lom-3" onclick="insert('*')"><b> x </b></button>
+                <button class="lom-4" onclick="insert('/')"><b> / </b></button>
+            </div>
+
+            <div style="display: flex;">
+                <div class="container-bung">
+                    <div class="angka" >
+                        <button class="lom-1" onclick="insert(1)"><b> 1 </b></button>
+                        <button class="lom-2" onclick="insert(2)"><b> 2 </b></button>
+                        <button class="lom-3" onclick="insert(3)"><b> 3 </b></button>
+    
+                    
+                    </div>
+                    <div class="angka " >
+                        <button class="lom-1" onclick="insert(4)"><b> 4 </b></button>
+                        <button class="lom-2" onclick="insert(5)"><b> 5 </b></button>
+                        <button class="lom-3" onclick="insert(6)"><b> 6 </b></button>
+                    </div>
+                    <div class="angka " >
+                        <button class="lom-1" onclick="insert(7)"><b> 7 </b></button>
+                        <button class="lom-2" onclick="insert(8)"><b> 8 </b></button>
+                        <button class="lom-3" onclick="insert(9)"><b> 9 </b></button>
+                    </div>
+                    <div class="angka " >
+                        <button class="lom-1" onclick="insert(0)"><b> 0 </b></button>
+                        <button class="lom-2" onclick="back()"><b> Back </b></button>
+                        <button class="lom-3" onclick="clean()"><b> Clear </b></button>
+                    </div>
+                </div>
+                <div class="row-sama" style="text-align: right ;">
+                    <button class="lom-8" onclick="equal()"><b> = </b></button>
+                </div>
+            </div>
+            
+        </div>
+          
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
